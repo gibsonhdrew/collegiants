@@ -87,7 +87,7 @@ const Content = (props) => (
 )
 
 const NavItem = (props) => (
-  <span style={{
+  <span className='navItem' style={{
     display: 'inline-block',
     fontSize: '1.0em',
     marginRight: '25px'
