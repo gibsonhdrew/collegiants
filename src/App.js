@@ -6,6 +6,7 @@ import About from './modules/About'
 import Services from './modules/Services'
 import Terms from './modules/Terms'
 import Testimonials from './modules/Testimonials'
+import Submitted from './modules/Submitted'
 import './App.css';
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
             <Route exact path='/services' component={Services}/>
             <Route exact path='/terms' component={Terms}/>
             <Route exact path='/testimonials' component={Testimonials}/>
+            <Route exact path='/submitted' component={Submitted}/>
           </Content>
         </AppBody>
       </Router>
@@ -63,6 +65,8 @@ const Nav = (props) => (
     boxShadow: '0px 2px 4px #999',
     paddingTop: '15px',
     height: '47px',
+    opacity: '1',
+    zIndex: '1',
     color: 'white'
   }} {...props} />
 )
@@ -77,7 +81,7 @@ const NavItems = (props) => (
 )
 
 const Content = (props) => (
-  <p style={{
+  <div style={{
     paddingTop: '100px',
     width: '1100px',
     maxWidth: '100vw',

@@ -1,10 +1,55 @@
 import React, { Component } from 'react';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {userName: '', userEmail: '', userPhone: '', userSubjects: '', userZip: ''}
+  }
+  handleChange(e) {
+    if (e.target.id === 'uName') {
+      this.setState({
+        userName: e.target.value
+      })
+    } else if (e.target.id === 'uEmail') {
+      this.setState({
+        userEmail: e.target.value
+      })
+    } else if (e.target.id === 'uPhone') {
+      this.setState({
+        userPhone: e.target.value
+      })
+    } else if (e.target.id === 'uSubjects') {
+      this.setState({
+        userSubjects: e.target.value
+      })
+    } else if (e.target.id === 'uZip') {
+      this.setState({
+        userZip: e.target.value
+      })
+    }
+  }
+  handleButtonClick(event) {
+    console.log('button clicked.')
+    console.log('name: '+this.state.userName)
+    console.log('email: '+this.state.userEmail)
+    console.log('Phone no: '+this.state.userPhone)
+    console.log('Subjects: '+this.state.userSubjects)
+    console.log('ZIP code: '+this.state.userZip)
+  }
   render() {
     return (
       <div>
-        <EmailBox/>
+        <EmailBox 
+          clickbutton={this.handleButtonClick} 
+          changeText={this.handleChange}
+          userName={this.userName}
+          userEmail={this.userEmail}
+          userPhone={this.userPhone}
+          userSubjects={this.userSubjects}
+          userZip={this.userZip}
+        />
         <div style={{width: '550px'}}>
           <HomeHeader>Holistic Education Services</HomeHeader>
           <p className='bodyText'>
@@ -42,12 +87,14 @@ const EmailBox = (props) => (
     <p style={{
       fontWeight: 'bold',
       fontSize: '1.3em'
-    }}>Start tutoring with us!</p>
-    <input className='homeInput' placeholder='Name:'/><br/>
-    <input className='homeInput' placeholder='Email Address:'/><br/>
-    <input className='homeInput' placeholder='Phone Number:'/><br/>
-    <input className='homeInput' placeholder='Tutoring Subject(s):'/><br/>
-    <input className='homeInput' placeholder='ZIP Code:'/><br/>
+    }}>
+      Start tutoring with us!
+    </p>
+    <input id='uName' value={props.userName} onChange={props.changeText} className='homeInput' placeholder='Name:'/><br/>
+    <input id='uEmail' value={props.userEmail} onChange={props.changeText} className='homeInput' placeholder='Email Address:'/><br/>
+    <input id='uPhone' value={props.userPhone} onChange={props.changeText} className='homeInput' placeholder='Phone Number:'/><br/>
+    <input id='uSubjects' value={props.userSubjects} onChange={props.changeText} className='homeInput' placeholder='Tutoring Subject(s):'/><br/>
+    <input id='uZip' value={props.userZip} onChange={props.changeText} className='homeInput' placeholder='ZIP Code:'/><br/>
     <button className='submitBtn' style={{
       width: '326px',
       height:'36px', 
@@ -57,7 +104,7 @@ const EmailBox = (props) => (
       fontWeight: 'bold',
       color: 'white',
       marginBottom:'5px'
-    }}>
+    }} onClick={props.clickbutton}>
       Submit &rarr;
     </button>
   </div>

@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -44,6 +49,17 @@ a {
   border-radius: 5px;
   margin-bottom: 6px;
   padding-left: 8px;
+}
+
+.grayBG:before {
+  content:"";
+  z-index: -1;
+  background-color: #f7f7f7;
+  position: absolute;
+  margin-top: -4px;
+  left: -2000px;
+  height: 100%;
+  width: 2000px;
 }
 
 .navItem {
