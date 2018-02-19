@@ -59,7 +59,7 @@ const Nav = (props) => (
     position: 'fixed',
     width: '100vw',
     textAlign: 'left',
-    backgroundColor: '#aa3a39',
+    backgroundColor: '#d34747',
     boxShadow: '0px 2px 4px #999',
     paddingTop: '15px',
     height: '47px',
@@ -70,6 +70,7 @@ const Nav = (props) => (
 const NavItems = (props) => (
   <div style={{
     width: '1100px',
+    fontWeight: 'bold',
     maxWidth: '100vw',
     margin: '0 auto',
   }} {...props} />

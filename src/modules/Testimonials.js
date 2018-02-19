@@ -42,7 +42,8 @@ const Testimonial = (props) => (
     marginTop: '10px',
     paddingLeft: '25px',
     paddingRight: '25px',
-    border: '2px solid #aa3e39'
+    borderRadius: '5px',
+    border: '2px solid #d34747'
   }} {...props} />
 )
 
