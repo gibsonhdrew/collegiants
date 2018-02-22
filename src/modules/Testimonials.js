@@ -35,27 +35,20 @@ class About extends Component {
 }
 
 const Testimonial = (props) => (
-  <div style= {{
-    width: '40vw',
+  <div className='theTestimonial' style= {{
     boxShadow: '2px 2px 8px #999999',
     marginBottom: '15px',
     marginTop: '15px',
-    paddingLeft: '25px',
-    paddingRight: '25px',
     borderRadius: '5px',
     border: '2px solid #d34747'
   }} {...props} />
 )
 
 const Testimonial2 = (props) => (
-  <div style= {{
-    width: '40vw',
+  <div className='theTestimonial2' style= {{
     boxShadow: '2px 2px 8px #999999',
     marginBottom: '15px',
     marginTop: '15px',
-    marginLeft: '60px',
-    paddingLeft: '25px',
-    paddingRight: '25px',
     borderRadius: '5px',
     border: '2px solid #d34747'
   }} {...props} />

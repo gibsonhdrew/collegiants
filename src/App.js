@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink as Link } from 'react-router-dom';
-import logo from './logo.svg';
+import owl from './images/logo.svg';
 import Home from './modules/Home'
 import About from './modules/About'
 import Services from './modules/Services'
@@ -16,21 +16,21 @@ class App extends Component {
         <AppBody>
           <Nav>
             <NavItems>
-              <Link to={'/'}>
+              <Link className='subNav'to={'/'}>
                 <div style={{position: 'relative', display: 'inline'}}>
                   <Title>Collegiants</Title>
                 </div>
               </Link>
-              <Link to={'/about'}>
+              <Link className='subNav subNav1' to={'/about'}>
                 <NavItem>About</NavItem>
               </Link>
-              <Link to={'/services'}>
+              <Link className='subNav subNav2' to={'/services'}>
                 <NavItem>Services</NavItem>
               </Link>
-              <Link to={'/terms'}>
-              <NavItem>Terms</NavItem>
+              <Link className='subNav subNav3' to={'/terms'}>
+                <NavItem>Terms</NavItem>
               </Link>
-              <Link to={'/testimonials'}>
+              <Link className='subNav subNav4' to={'/testimonials'}>
                 <NavItem>Testimonials</NavItem>
               </Link>
             </NavItems>
@@ -56,15 +56,11 @@ const AppBody = (props) => (
 )
 
 const Nav = (props) => (
-  <div style={{
+  <div className='theNav' style={{
     display: 'inline-block',
-    position: 'fixed',
     width: '100vw',
     textAlign: 'left',
     backgroundColor: '#d34747',
-    boxShadow: '0px 2px 4px #999',
-    paddingTop: '15px',
-    height: '47px',
     opacity: '1',
     zIndex: '1',
     color: 'white'
@@ -72,7 +68,7 @@ const Nav = (props) => (
 )
 
 const NavItems = (props) => (
-  <div style={{
+  <div className='theNavItems' style={{
     width: '1100px',
     fontWeight: 'bold',
     maxWidth: '100vw',
@@ -81,9 +77,7 @@ const NavItems = (props) => (
 )
 
 const Content = (props) => (
-  <div style={{
-    paddingTop: '100px',
-    width: '1100px',
+  <div className='theContent' style={{
     maxWidth: '100vw',
     margin: '0 auto',
     fontSize: '1.0em'
@@ -100,7 +94,7 @@ const NavItem = (props) => (
 
 const Title = (props) => (
   <div style={{display: 'inline-block'}}>
-    <img src={logo} style={{
+    <img src={owl} style={{
       height: '32px',
       position: 'absolute',
       bottom: '-3px',

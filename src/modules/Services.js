@@ -15,7 +15,7 @@ class Services extends Component {
           While Collegiants does not offer in-person mock testing services, Collegiants does provide scoring and analysis of SAT and ACT mocks submitted online for a flat fee of $100 per test.
         </p>
         <p className='bodyText'>
-          For Mandarin services, please call Christine at (917) 583-3455. For all other services, please call Ethan at (917) 583-2276 or email him at ethanjkaplan@gmail.com
+          For Mandarin services, please call Christine at (917) 583-3455. For all other services, please call Ethan at (917) 583-2276 or email him at <a className='bolder' href='mailto:ethanjkaplan@gmail.com'>ethanjkaplan@gmail.com</a>.
         </p>
       </div>
     )

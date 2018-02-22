@@ -40,16 +40,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <div>
-        <EmailBox 
-          clickbutton={this.handleButtonClick} 
-          changeText={this.handleChange}
-          userName={this.userName}
-          userEmail={this.userEmail}
-          userPhone={this.userPhone}
-          userSubjects={this.userSubjects}
-          userZip={this.userZip}
-        />
+      <div className='flexDiv'>
         <div style={{width: '550px'}}>
           <HomeHeader>Holistic Education Services</HomeHeader>
           <p className='bodyText'>
@@ -59,15 +50,23 @@ class Home extends Component {
           Collegiants works with students of all levels from perfect scorers to those with learning differences. There is no one single type of student, so we always tailor our services to the individual needs and learning styles of every single person we teach. More than anything, we want our students to succeed! And succeed they have: previouis Collegiants students have attended Harvard, Yale, Princeton, Northwestern and even Juilliard!
           </p>
         </div>
+        <EmailBox 
+          clickbutton={this.handleButtonClick} 
+          changeText={this.handleChange}
+          userName={this.userName}
+          userEmail={this.userEmail}
+          userPhone={this.userPhone}
+          userSubjects={this.userSubjects}
+          userZip={this.userZip}
+        />
       </div>
     )
   }
 }
 
 const HomeHeader = (props) => (
-  <p style = {{
+  <p className='theHomeHeader' style = {{
     fontWeight: 'bold',
-    fontSize: '42px'
   }} {...props} />
 )
 
@@ -75,10 +74,8 @@ const EmailBox = (props) => (
   <div style = {{
     border: '3px solid #D34747',
     boxShadow: '2px 2px 6px #999999',
-    float: 'right',
-    marginTop: '12px',
-    marginRight: '50px',
-    display: 'absolute',
+    marginTop: '52px',
+    marginBottom: '60px',
     textAlign: 'center', 
     borderRadius: '10px',
     width: '400px',
