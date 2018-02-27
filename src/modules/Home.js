@@ -87,23 +87,25 @@ const EmailBox = (props) => (
     }}>
       Start tutoring with us!
     </p>
-    <input id='uName' value={props.userName} onChange={props.changeText} className='homeInput' placeholder='Name:'/><br/>
-    <input id='uEmail' value={props.userEmail} onChange={props.changeText} className='homeInput' placeholder='Email Address:'/><br/>
-    <input id='uPhone' value={props.userPhone} onChange={props.changeText} className='homeInput' placeholder='Phone Number:'/><br/>
-    <input id='uSubjects' value={props.userSubjects} onChange={props.changeText} className='homeInput' placeholder='Tutoring Subject(s):'/><br/>
-    <input id='uZip' value={props.userZip} onChange={props.changeText} className='homeInput' placeholder='ZIP Code:'/><br/>
-    <button className='submitBtn' style={{
-      width: '326px',
-      height:'36px', 
-      backgroundColor: '#D34747', 
-      border: '3px solid #D34747', 
-      borderRadius:'5px',
-      fontWeight: 'bold',
-      color: 'white',
-      marginBottom:'5px'
-    }} onClick={props.clickbutton}>
-      Submit &rarr;
-    </button>
+    <form method="POST" action="https://formspree.io/gibsonhdrew@gmail.com">
+      <input name='Name' id='uName' value={props.userName} onChange={props.changeText} className='homeInput' placeholder='Name:'/><br/>
+      <input type='email' name='Email' id='uEmail' value={props.userEmail} onChange={props.changeText} className='homeInput' placeholder='Email Address:'/><br/>
+      <input name='Phone Number' id='uPhone' value={props.userPhone} onChange={props.changeText} className='homeInput' placeholder='Phone Number:'/><br/>
+      <input name='Subject(s)' id='uSubjects' value={props.userSubjects} onChange={props.changeText} className='homeInput' placeholder='Tutoring Subject(s):'/><br/>
+      <input name='ZIP Code' id='uZip' value={props.userZip} onChange={props.changeText} className='homeInput' placeholder='ZIP Code:'/><br/>
+      <button type='submit' className='submitBtn' style={{
+        width: '326px',
+        height:'36px', 
+        backgroundColor: '#D34747', 
+        border: '3px solid #D34747', 
+        borderRadius:'5px',
+        fontWeight: 'bold',
+        color: 'white',
+        marginBottom:'5px'
+      }} onClick={props.clickbutton}>
+        Submit &rarr;
+      </button>
+    </form>
   </div>
 )
 
