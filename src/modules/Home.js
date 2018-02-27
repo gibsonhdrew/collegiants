@@ -87,7 +87,7 @@ const EmailBox = (props) => (
     }}>
       Start tutoring with us!
     </p>
-    <form method="POST" action="https://formspree.io/gibsonhdrew@gmail.com">
+    <form method="POST" action="https://formspree.io/ethanjkaplan@gmail.com">
       <input name='Name' id='uName' value={props.userName} onChange={props.changeText} className='homeInput' placeholder='Name:'/><br/>
       <input type='email' name='Email' id='uEmail' value={props.userEmail} onChange={props.changeText} className='homeInput' placeholder='Email Address:'/><br/>
       <input name='Phone Number' id='uPhone' value={props.userPhone} onChange={props.changeText} className='homeInput' placeholder='Phone Number:'/><br/>
