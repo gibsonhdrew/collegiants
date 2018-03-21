@@ -25,12 +25,6 @@ a {
   margin-bottom: 25px;
 }
 
-.App-logo {
-  height: 28px;
-  position: absolute;
-  bottom: 0;
-}
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -68,6 +62,10 @@ a {
 
 .navItem:hover {
   opacity: 1;
+}
+
+.owlLogo {
+    bottom: -3px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -134,6 +132,10 @@ a {
     text-align: left;
     max-width: 700px;
     margin-bottom: 25px;
+  }
+
+  .owlLogo {
+      bottom: 2px;
   }
 
   .theHomeHeader {

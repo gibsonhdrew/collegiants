@@ -94,10 +94,9 @@ const NavItem = (props) => (
 
 const Title = (props) => (
   <div style={{display: 'inline-block'}}>
-    <img src={owl} style={{
+    <img className='owlLogo' src={owl} style={{
       height: '32px',
       position: 'absolute',
-      bottom: '-3px',
       left: '-8px',
       filter: 'grayscale(100%)'
     }} alt='app-logo'/>
