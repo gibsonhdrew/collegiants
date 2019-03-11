@@ -42,12 +42,12 @@ class Home extends Component {
     return (
       <div className='flexDiv'>
         <div style={{width: '550px'}}>
-          <HomeHeader>Holistic Education Services</HomeHeader>
+          <HomeHeader>Expert Test Prep, Academic Tutoring, and Language Learning</HomeHeader>
           <p className='bodyText'>
-            Collegiants is an all-inclusive tutoring, college counseling, and educational services company run by husband and wife Ethan Kaplan and Christine Loh. With years of tutoring, teaching, and college lecturing experience, Ethan and Christine offer lessons and guidance in nearly every subject with special expertise in tutoring the SAT, ACT, SAT Subject Tests, GRE, ISEE, SSAT, SHSAT, and the subjects of Mandarin, English, and US & World History. 
+              Collegiants is an all-inclusive, expert tutoring company founded by Ethan Kaplan and Christine Loh. With years of tutoring, teaching, and college lecturing experience, Collegiants tutors offer lessons and guidance in nearly every subject with special expertise in tutoring the SAT, ACT, SAT Subject Tests, GRE, ISEE, SSAT, and SHSAT exams. Collegiants also offers academic tutoring in most subjects, and offers robust Mandarin Chinese programs for both students and adults.
           </p>
           <p className='bodyText'>
-          Collegiants works with students of all levels from perfect scorers to those with learning differences. There is no one single type of student, so we always tailor our services to the individual needs and learning styles of every single person we teach. More than anything, we want our students to succeed! And succeed they have: previouis Collegiants students have attended Harvard, Yale, Princeton, Northwestern and even Juilliard!
+              Collegiants works with students of all levels from perfect scorers to those with learning differences. There is no one single type of student, so we always tailor our services to the individual needs and learning styles of every single person we teach. More than anything, we want our students to succeed! And succeed they have: Collegiants students have attended Harvard, Yale, Princeton, Northwestern, Juilliard, and many other prestigious universities in both the US and abroad!
           </p>
         </div>
         <EmailBox 
@@ -87,7 +87,7 @@ const EmailBox = (props) => (
     }}>
       Start tutoring with us!
     </p>
-    <form method="POST" action="https://formspree.io/ethanjkaplan@gmail.com">
+    <form method="POST" action="https://formspree.io/info@collegiants.com">
       <input name='Name' id='uName' value={props.userName} onChange={props.changeText} className='homeInput' placeholder='Name:'/><br/>
       <input type='email' name='Email' id='uEmail' value={props.userEmail} onChange={props.changeText} className='homeInput' placeholder='Email Address:'/><br/>
       <input name='Phone Number' id='uPhone' value={props.userPhone} onChange={props.changeText} className='homeInput' placeholder='Phone Number:'/><br/>
