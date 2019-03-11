@@ -27,10 +27,10 @@ class App extends Component {
               <Link className='subNav subNav2' to={'/services'}>
                 <NavItem>Services</NavItem>
               </Link>
-              <Link className='subNav subNav4' to={'/testimonials'}>
+              <Link className='subNav subNav3' to={'/testimonials'}>
                 <NavItem>Testimonials</NavItem>
               </Link>
-              <Link className='subNav subNav3' to={'/terms'}>
+              <Link className='subNav subNav4' to={'/terms'}>
                 <NavItem>Terms</NavItem>
               </Link>
             </NavItems>
