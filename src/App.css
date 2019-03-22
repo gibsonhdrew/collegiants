@@ -14,12 +14,13 @@ a {
 
 .pageTitle {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .bodyText {
   font-size: 1.1em;
   line-height: 160%;
+  font-weight: 400;
   text-align: left;
   max-width: 700px;
   margin-bottom: 25px;
