@@ -5,6 +5,11 @@ class Mandarin extends Component {
     return (
       <div>
         <p className='pageTitle'>Mandarin</p>
+
+        <div class="nyc-shanghai-images">
+            <img src="images/nyc-sh.jpg"/>
+        </div>
+
         <h2>Are you ready to enter the world of tomorrow?</h2>
 
         <p className="bodyText">
