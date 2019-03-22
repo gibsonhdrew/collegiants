@@ -5,6 +5,7 @@ import Home from './modules/Home'
 import About from './modules/About'
 import Services from './modules/Services'
 import Terms from './modules/Terms'
+import Mandarin from './modules/Mandarin'
 import Testimonials from './modules/Testimonials'
 import Submitted from './modules/Submitted'
 import './App.css';
@@ -33,14 +34,18 @@ class App extends Component {
               <Link className='subNav subNav4' to={'/terms'}>
                 <NavItem>Terms</NavItem>
               </Link>
+              <Link className='subNav subNav5' to={'/mandarin'}>
+                <NavItem>Mandarin</NavItem>
+              </Link>
             </NavItems>
           </Nav>
           <Content>
             <Route exact path='/' component={Home}/>
             <Route exact path='/about' component={About}/>
             <Route exact path='/services' component={Services}/>
-            <Route exact path='/terms' component={Terms}/>
             <Route exact path='/testimonials' component={Testimonials}/>
+            <Route exact path='/terms' component={Terms}/>
+            <Route exact path='/mandarin' component={Mandarin}/>
             <Route exact path='/submitted' component={Submitted}/>
           </Content>
         </AppBody>

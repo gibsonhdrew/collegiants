@@ -153,7 +153,10 @@ a {
     background-color: rgba(255,255,255,0.36);
   }
   .subNav4 {
-    background-color: rgba(255,255,255,0.52);
+    background-color: rgba(255,255,255,0.49);
+  }
+  .subNav5 {
+      background-color: rgba(255,255,255,0.65);
   }
 
   .theTestimonial, .theTestimonial2 {
@@ -173,7 +176,7 @@ a {
   }
 
   .theContent {
-    padding-top: 250px;
+    padding-top: 300px;
     width: auto;
     padding-left: 5vw;
     padding-right: 5vw;
