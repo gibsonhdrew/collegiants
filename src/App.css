@@ -137,6 +137,9 @@ a {
 
 /* MOBILE */
 @media screen and (max-width: 800px) {
+    * {
+        font-family: 'Helvetica', sans-serif;
+    }
   .subNav {
     font-size: 22px;
     display: block;
