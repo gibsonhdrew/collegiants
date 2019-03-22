@@ -4,7 +4,7 @@ class Mandarin extends Component {
   render() {
     return (
       <div>
-        <p className='pageTitle'>Mandarin</p>
+        <p className='pageTitle'>Collegiants Mandarin</p>
 
         <div class="nyc-shanghai-images">
             <img src="images/nyc-sh.jpg"/>
