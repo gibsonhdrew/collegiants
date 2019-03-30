@@ -7,7 +7,7 @@ class Mandarin extends Component {
         <p className='pageTitle'>Collegiants Mandarin</p>
 
         <div class="nyc-shanghai-images">
-            <img src="images/nyc-sh.jpg"/>
+            <img src="images/nyc-sh.jpg" alt="nyc-sh"/>
         </div>
 
         <h2>Are you ready to enter the world of tomorrow?</h2>
